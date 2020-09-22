@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
     # https://developer.github.com/webhooks/event-payloads/#pull_request
-    types: [edited, synchronize, ready_for_review]
+    types: [edited, synchronize, review_requested, ready_for_review]
     branches: "*"
 
 jobs:
@@ -21,6 +21,7 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}
       - name: Danger
         run: |
+          echo ${{ github.event.action }}
           npm ci --quiet
           npm run build
           npm run danger
