@@ -1,3 +1,4 @@
+/* eslint-disable prefer-object-spread */
 //
 // Assigns or removes a "wip" label
 //
@@ -37,16 +38,18 @@ export default async (label = defaultLabel) => {
   if (isWip && !existingLabels.includes(label)) {
     const newLabels = existingLabels.slice();
     newLabels.push(label);
-    await gitHubApi.issues.replaceLabels({
-      ...issue,
-      labels: newLabels,
-    });
+    await gitHubApi.issues.replaceLabels(
+      Object.assign({}, issue, {
+        labels: newLabels,
+      }),
+    );
   } else if (!isWip && existingLabels.includes(label)) {
     const newLabels = existingLabels.slice();
     newLabels.splice(existingLabels.indexOf(label), 1);
-    await gitHubApi.issues.replaceLabels({
-      ...issue,
-      labels: newLabels,
-    });
+    await gitHubApi.issues.replaceLabels(
+      Object.assign({}, issue, {
+        labels: newLabels,
+      }),
+    );
   }
 };
