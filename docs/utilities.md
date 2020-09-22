@@ -225,3 +225,26 @@ Project repository url where the pull request is being send from (shorthand for 
 ### href
 
 Generate a link to a file in the repository (shorthand for `danger.utils.href`).
+
+### addLabel
+
+Add (or remove) a custom label
+
+#### Configuration
+
+| Property   | Type    | Default Value |
+| ---------- | ------- | ------------- |
+| label      | string  | `'wip'`       |
+| draft      | boolean | `true`        |
+| titleTerms | array   | `['wip']`     |
+
+#### Usage
+
+```js
+addLabel();
+addLabel({
+  label: 'wip',
+  draft: true,
+  titleTerms: ['wip'],
+});
+```

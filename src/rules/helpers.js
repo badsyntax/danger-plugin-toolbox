@@ -7,10 +7,14 @@ const {
     structuredDiffForFile,
   },
   github: {
+    api: gitHubApi,
+    thisPR: prMeta,
+    issue,
     pr: {
       title: prTitle,
       body: prDescription,
       user: { login: prAuthor },
+      mergeable_state: prMergeableState,
       base: {
         ref: targetBranch,
         repo: { id: targetProjectId, html_url: targetRepoUrl },
@@ -32,6 +36,8 @@ export {
   prTitle,
   prDescription,
   prAuthor,
+  prMergeableState,
+  prMeta,
   targetBranch,
   targetProjectId,
   targetRepoUrl,
@@ -39,6 +45,8 @@ export {
   sourceProjectId,
   sourceRepoUrl,
   href,
+  gitHubApi,
+  issue,
 };
 
 export const externalPr = sourceProjectId !== targetProjectId;
