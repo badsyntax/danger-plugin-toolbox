@@ -26,5 +26,5 @@ jobs:
           npm run danger
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}
-
-      #   # if: github.event_name == 'pull_request' && github.event.action == 'edited'
+        if: github.event_name == 'pull_request'
+        # if: github.event_name == 'pull_request' && github.event.action == 'edited'
