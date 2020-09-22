@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Danger
-        run: |
-          npm ci --quiet
-          npm run danger
-        # if: github.event_name == 'pull_request' && github.event.action == 'edited'
+      - name: Danger JS Action
+        uses: danger/danger-js@9.1.8
+      # - name: Danger
+      #   run: |
+      #     npm ci --quiet
+      #     npm run danger
+      #   # if: github.event_name == 'pull_request' && github.event.action == 'edited'
