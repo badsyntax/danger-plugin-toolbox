@@ -1,9 +1,9 @@
-name: WIP
+name: CI
 
 on:
   pull_request:
     # https://developer.github.com/webhooks/event-payloads/#pull_request
-    types: [opened, edited, closed, assigned, unassigned, review_requested, review_request_removed, ready_for_review, labeled, unlabeled, synchronize, locked, unlocked, reopened, converted_to_draft]
+    types: [edited, synchronize, converted_to_draft, ready_for_review]
     branches: "*"
 
 jobs:
@@ -14,10 +14,6 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: '12'
-      # - name: Danger JS Action
-      #   uses: danger/danger-js@9.1.8
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}
       - name: Danger
         run: |
           echo ${{ github.event.action }}
@@ -26,5 +22,4 @@ jobs:
           npm run danger
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}
-        if: github.event_name == 'pull_request'
         # if: github.event_name == 'pull_request' && github.event.action == 'edited'
