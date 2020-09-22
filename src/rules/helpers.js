@@ -11,6 +11,7 @@ const {
       title: prTitle,
       body: prDescription,
       user: { login: prAuthor },
+      mergeable_state: prMergeableState,
       base: {
         ref: targetBranch,
         repo: { id: targetProjectId, html_url: targetRepoUrl },
@@ -32,6 +33,7 @@ export {
   prTitle,
   prDescription,
   prAuthor,
+  prMergeableState,
   targetBranch,
   targetProjectId,
   targetRepoUrl,

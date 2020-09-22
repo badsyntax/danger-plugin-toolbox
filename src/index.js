@@ -19,6 +19,7 @@ import commonFileWarnings from './rules/common/fileWarnings';
 import commonPrDescription from './rules/common/prDescription';
 import commonPrDescriptionContribution from './rules/common/prDescriptionContribution';
 import commonValidJson from './rules/common/validJson';
+import wip from './rules/common/wip';
 import cssBackpackVariables from './rules/css/backpackVariables';
 import cssGlobalStylelintChange from './rules/css/globalStylelintChange';
 import cssLocalStylelintChange from './rules/css/localStylelintChange';
@@ -82,4 +83,5 @@ export {
   jsTestShortcuts,
   reactBackpackCssModules,
   reactRecommendClassProperties,
+  wip,
 };
