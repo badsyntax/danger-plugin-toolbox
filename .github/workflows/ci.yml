@@ -19,6 +19,7 @@ jobs:
       - name: Danger
         run: |
           npm ci --quiet
+          npm run build
           npm run danger
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_TOKEN }}
