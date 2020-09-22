@@ -225,3 +225,7 @@ Project repository url where the pull request is being send from (shorthand for 
 ### href
 
 Generate a link to a file in the repository (shorthand for `danger.utils.href`).
+
+### wipLabel
+
+Add or remove a "wip" label if the PR is a draft or if a "wip" term is found in the PR title.

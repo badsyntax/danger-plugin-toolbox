@@ -102,6 +102,8 @@ targetBranch
 targetProjectId
 targetRepoUrl
 url
+wipLabel
+wip
 
 danger-plugin-toolbox
 Jaume

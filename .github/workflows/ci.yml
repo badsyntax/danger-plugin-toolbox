@@ -1,8 +1,9 @@
-name: CI
+name: WIP
 
 on:
   pull_request:
     # https://developer.github.com/webhooks/event-payloads/#pull_request
+    # converted_to_draft is currently only available in github public
     types: [edited, synchronize, converted_to_draft, ready_for_review]
     branches: "*"
 

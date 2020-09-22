@@ -19,7 +19,6 @@ import commonFileWarnings from './rules/common/fileWarnings';
 import commonPrDescription from './rules/common/prDescription';
 import commonPrDescriptionContribution from './rules/common/prDescriptionContribution';
 import commonValidJson from './rules/common/validJson';
-import wip from './rules/common/wip';
 import cssBackpackVariables from './rules/css/backpackVariables';
 import cssGlobalStylelintChange from './rules/css/globalStylelintChange';
 import cssLocalStylelintChange from './rules/css/localStylelintChange';
@@ -40,6 +39,7 @@ import jsRecommendAsyncAwait from './rules/js/recommendAsyncAwait';
 import jsTestShortcuts from './rules/js/testShortcuts';
 import reactBackpackCssModules from './rules/react/backpackCssModules';
 import reactRecommendClassProperties from './rules/react/recommendClassProperties';
+import wipLabel from './actions/wipLabel';
 
 export * from './rules/helpers';
 export {
@@ -83,5 +83,5 @@ export {
   jsTestShortcuts,
   reactBackpackCssModules,
   reactRecommendClassProperties,
-  wip,
+  wipLabel,
 };
