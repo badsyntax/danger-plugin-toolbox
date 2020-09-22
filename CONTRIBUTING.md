@@ -10,6 +10,8 @@ This project operates under a _forking model_. In order to contribute, please:
 
 ## Development
 
+Run `nvm use` to select the correct Node version. _([Install NVM here.](https://github.com/nvm-sh/nvm))_
+
 Run `npm install` to install the dependencies.
 
 A pre-commit hook will lint the code and automatically fix some issues (and added to the commit). Linter can be executed manually running `npm run lint`.
@@ -18,3 +20,5 @@ To test the code, run `npm test`. A pre-push hook will run the tests before the 
 
 - The command `npm run test:watch` runs the tests in watch mode (execution is triggered automatically when editing a test file).
 - The command `npm run test:coverage` generates the coverage report (in the `coverage/` folder).
+
+Run `npm run build` to build the package for release.

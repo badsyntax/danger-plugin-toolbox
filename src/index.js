@@ -39,6 +39,7 @@ import jsRecommendAsyncAwait from './rules/js/recommendAsyncAwait';
 import jsTestShortcuts from './rules/js/testShortcuts';
 import reactBackpackCssModules from './rules/react/backpackCssModules';
 import reactRecommendClassProperties from './rules/react/recommendClassProperties';
+import addLabel from './actions/addLabel';
 
 export * from './rules/helpers';
 export {
@@ -82,4 +83,5 @@ export {
   jsTestShortcuts,
   reactBackpackCssModules,
   reactRecommendClassProperties,
+  addLabel,
 };

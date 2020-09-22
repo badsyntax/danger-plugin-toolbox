@@ -102,6 +102,9 @@ targetBranch
 targetProjectId
 targetRepoUrl
 url
+addLabel
+wip
+titleTerms
 
 danger-plugin-toolbox
 Jaume
