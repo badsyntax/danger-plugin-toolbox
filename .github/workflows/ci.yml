@@ -3,7 +3,7 @@ name: WIP
 on:
   pull_request:
     # https://developer.github.com/webhooks/event-payloads/#pull_request
-    types: [edited, synchronize, review_request_removed, ready_for_review]
+    types: [edited, synchronize, review_request_removed, ready_for_review, review_requested, closed, locked, unlocked, reopened]
     branches: "*"
 
 jobs:
