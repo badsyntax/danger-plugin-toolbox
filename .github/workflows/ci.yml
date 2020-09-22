@@ -15,6 +15,5 @@ jobs:
       - name: Danger
         run: |
           npm ci --quiet
-          npm install -g danger-plugin-toolbox@1.29.0
           npm run danger
         # if: github.event_name == 'pull_request' && github.event.action == 'edited'
