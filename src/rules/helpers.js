@@ -7,6 +7,7 @@ const {
     structuredDiffForFile,
   },
   github: {
+    api: gitHubApi,
     pr: {
       title: prTitle,
       body: prDescription,
@@ -41,6 +42,7 @@ export {
   sourceProjectId,
   sourceRepoUrl,
   href,
+  gitHubApi,
 };
 
 export const externalPr = sourceProjectId !== targetProjectId;
