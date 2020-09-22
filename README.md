@@ -38,13 +38,13 @@ if (inCommitGrep(/.+\.log$/)) {
 
 Find here the documentation of all **validations** and **utilities** provided by Danger Plugin Toolbox:
 
-- [Validations](docs/validations.md)
-- [Utilities](docs/utilities.md)
+- [Validations](https://github.com/sogame/danger-plugin-toolbox/blob/master/docs/validations.md)
+- [Utilities](https://github.com/sogame/danger-plugin-toolbox/blob/master/docs/utilities.md)
 
 ## Changelog
 
-See the release history in [CHANGELOG.md](CHANGELOG.md).
+See the release history in [CHANGELOG.md](https://github.com/sogame/danger-plugin-toolbox/blob/master/CHANGELOG.md).
 
 ## Contributing
 
-To contribute please see [CONTRIBUTING.md](CONTRIBUTING.md).
+To contribute please see [CONTRIBUTING.md](https://github.com/sogame/danger-plugin-toolbox/blob/master/CONTRIBUTING.md).
